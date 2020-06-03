@@ -30,8 +30,6 @@ footer {
   margin: auto;
   width: 100%;
   max-width: 60em;/*960px*/
-  &:first-child {padding-top: 3em;}
-  &:last-child {padding-bottom: 3em;}
 }
 .col-3,
 .col-2 {
@@ -66,10 +64,8 @@ button {
   color: #fff;
   border: 0;
   outline: 0;
-  @extend %transition;
-  &:focus,
-  &:hover {background: lighten(#000, 10%);}
-  &:active {background: lighten(#000, 3%);}
+
+ 
 }
 /*Intro*/
 .sec-intro {position: relative;}
@@ -92,7 +88,7 @@ header input:checked ~ nav > .nav {
   background: $red;
   opacity: 0;
   overflow: hidden;
-  @extend %transition;
+ 
 }
 .nav a {
   display: block;
@@ -101,10 +97,8 @@ header input:checked ~ nav > .nav {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  @extend %transition;
-  &:focus,
-  &:hover {background: darken($red, 10%);}
-  &:active {background: lighten($red, 1%);}
+ 
+
 }
 header label {
   display: block;
@@ -114,7 +108,7 @@ header label {
   background: $red;
   color: #fff;
   cursor: pointer;
-  @extend %transition;
+
   &:before {
     content: "\f0c9";
     font: 2em fontAwesome;
@@ -174,8 +168,6 @@ header label {
   position: relative;
   height: 245px;
   cursor: pointer;
-  @extend %transition;
-  &:hover {opacity: .8;}
 }
 .post span,
 .post h1,
@@ -220,7 +212,6 @@ header label {
   width: 100%;
   cursor: pointer;
   @extend %transition;
-  &:hover {/*opacity: .8;*/filter: brightness(50%);}
 }
 /*Footer*/
 footer {background: #111;}
@@ -236,10 +227,7 @@ footer {background: #111;}
   font-size: 1.5em;
   text-decoration: none;
   color: #fff;
-  @extend %transition;
-  &:focus,
-  &:hover {color: $red;}
-  &:active {color: #222;}
+ 
 }
 footer p {
   font-size: .85em;
