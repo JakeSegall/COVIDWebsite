@@ -44,7 +44,16 @@ ul {
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
+
   li a:hover {
     background-color: #111;
+  }
+
+
+  @media only screen and (max-width: 375px) {
+    .Title{
+      background: rgb(116, 126, 124);
+    }
+  
+  
   }
